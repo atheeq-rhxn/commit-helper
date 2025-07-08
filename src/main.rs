@@ -18,15 +18,16 @@ fn main() {
 
     // Otherwise, prompt for a message
     let commit_type_options = vec![
-        CommitType::new("build", "build system and dependencies"),
-        CommitType::new("ci", "continuous integration"),
-        CommitType::new("chore", "misc/maintenance not related to core code"),
-        CommitType::new("docs", "documentation changes (e.g., README.md, comments)"),
-        CommitType::new("feat", "new feature or significant enhancement"),
-        CommitType::new("fix", "bug fix or error correction"),
-        CommitType::new("perf", "performance improvement"),
-        CommitType::new("refactor", "code restructuring or cleanup"),
-        CommitType::new("test", "add or update tests"),
+        CommitType::new("👷 build", "build system and dependencies"),
+        CommitType::new("💚 ci", "continuous integration"),
+        CommitType::new("🔧 chore", "misc/maintenance not related to core code"),
+        CommitType::new("📝 docs", "documentation changes (e.g., README.md, comments)"),
+        CommitType::new("✨ feat", "new feature or significant enhancement"),
+        CommitType::new("🐛 fix", "bug fix or error correction"),
+        CommitType::new("⚡ perf", "performance improvement"),
+        CommitType::new("♻️ refactor", "code restructuring or cleanup"),
+        CommitType::new("🎨 style", "formatting, white-space, etc. (no code change)"),
+        CommitType::new("✅ test", "add or update tests"),
     ];
 
     // Format the commit type options for display
