@@ -37,6 +37,7 @@ fn main() {
     // Prompt for the commit type
     let selected_type: Result<CommitType, InquireError> = Select::new("Type:", commit_type_options)
         .with_formatter(formatter)
+        .with_vim_mode(true)
         .prompt();
 
     // Get the name of the selected commit type
