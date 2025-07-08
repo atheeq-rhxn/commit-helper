@@ -7,10 +7,6 @@ use clap::Parser;
     about = "Run multiple commands related to `git commit` in succession"
 )]
 pub struct Cli {
-    /// Run `git add -A` before committing
-    #[arg(short = 'a', long = "add")]
-    pub add: bool,
-
     /// Copy commit message to clipboard instead of committing
     #[arg(short = 'c', long = "clipboard")]
     pub clipboard: bool,
